@@ -86,7 +86,7 @@ export function RegisterDialog({
            <Label htmlFor="courseId">วิชา</Label>
             <Select
               value={courseId}
-              onValueChange={(value : string) => setCourseId((value as string))}
+              onValueChange={(value) => setCourseId((value as string) ?? "")}
             >
               <SelectTrigger
                 id="courseId"
